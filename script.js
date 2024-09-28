@@ -8,7 +8,7 @@ function calculateTotal() {
     let dhulai = parseFloat(document.getElementById('dhulai').value);
 
     // Calculate the total
-    let total = earning + toll + petrol + cash + bachat + dhulai;
+    let total = earning + toll + petrol - cash - bachat + dhulai;
 
     // Display the total
     document.getElementById('total').textContent = total;
